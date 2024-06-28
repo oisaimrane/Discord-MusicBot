@@ -1,6 +1,13 @@
 //JotaroKujo0525 note, this is a deed that i should've done a long time ago
 require('dotenv').config()
+const express = require('express');
+const app = express();
 
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
 const DiscordMusicBot = require("./lib/DiscordMusicBot");
 const { exec } = require("child_process");
 
