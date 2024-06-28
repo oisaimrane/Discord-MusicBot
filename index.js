@@ -1,5 +1,6 @@
 //JotaroKujo0525 note, this is a deed that i should've done a long time ago
 require('dotenv').config()
+
 const express = require('express');
 const app = express();
 
